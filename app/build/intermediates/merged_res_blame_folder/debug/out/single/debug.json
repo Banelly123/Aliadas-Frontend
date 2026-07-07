@@ -1,0 +1,418 @@
+[
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_avatar_circle.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_avatar_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_moon.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_moon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_visibility_off.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_phone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_menu.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_medical_services.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_medical_services.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_fire.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_fire.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_community.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_community.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_comment.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_dashed_decorative.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_dashed_decorative.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_shield.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_shield.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_avatar_circle_small.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_avatar_circle_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_nav_active.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_nav_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_local_police.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_local_police.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_encrypted_info.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_encrypted_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_icon_circle.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_icon_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_pill_status.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_pill_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_fragment_resources.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_resources.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_pill_inactive.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_pill_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_item_contact.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_dialog_add_contact.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\dialog_add_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_group.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_avatar_selector.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_avatar_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_preference_group.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_preference_group.xml"
+    },
+    {
+        "merged": "com.aliadas.app-merged_res-55:/drawable_ic_aliadas_logo.xml.flat",
+        "source": "com.aliadas.app-main-57:/drawable/ic_aliadas_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_dialog_avatar_picker.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\dialog_avatar_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_top_bar.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_top_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_edittext_low.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_edittext_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_flower.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_flower.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_resources.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_resources.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_fragment_contacts.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_contact_avatar.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_contact_avatar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_sun.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_sun.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_dot_pulse.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_dot_pulse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_psychology.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_psychology.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_fragment_community.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_community.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_contacts.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_divider_line_horizontal.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_divider_line_horizontal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_wave.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_wave.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_label.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_label.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_snowflake.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_snowflake.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_diamond.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_diamond.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_leaf.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_leaf.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_dialog_rounded.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_dialog_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_emergency.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_banner_blur.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_banner_blur.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_dot_error.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_dot_error.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_item_post.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_divider_line.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_divider_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_google.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_google.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_search.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_notifications_active.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_notifications_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_dot_bullet.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_dot_bullet.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_share_location.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_share_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\color_nav_icon_color.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\color\\nav_icon_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_chip_purple.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_chip_purple.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_crown.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_crown.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_map_top_gradient_overlay.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\map_top_gradient_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_heart.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_heart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_diamond.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_diamond.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_register_input_container.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_register_input_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_female.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_female.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_send_btn.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_send_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_call.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_call.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_visibility.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_visibility.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_heart.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_heart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_item_resource.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_resource.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_butterfly.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_butterfly.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_map.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_aliadas_logo.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_aliadas_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_comment.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_bottom_sheet_comments.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\bottom_sheet_comments.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_library_books.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_library_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_pill_active.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_pill_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_send.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_avatar_star.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_star.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_item_comment.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_role_tag.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_role_tag.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_input_field.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_input_field.xml"
+    }
+]

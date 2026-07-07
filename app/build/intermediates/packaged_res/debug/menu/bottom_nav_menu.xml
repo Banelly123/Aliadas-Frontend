@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_map"
+        android:title="Mapa" />
+    <item
+        android:id="@+id/contactsFragment"
+        android:icon="@drawable/ic_contacts"
+        android:title="Contactos" />
+    <item
+        android:id="@+id/communityFragment"
+        android:icon="@drawable/ic_community"
+        android:title="Comunidad" />
+    <item
+        android:id="@+id/resourcesFragment"
+        android:icon="@drawable/ic_library_books"
+        android:title="Recursos" />
+</menu>

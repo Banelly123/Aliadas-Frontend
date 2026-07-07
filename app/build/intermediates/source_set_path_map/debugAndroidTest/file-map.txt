@@ -1,0 +1,6 @@
+com.aliadas.test.app-annotation-experimental-1.3.0-0 C:\Users\Bannelita\.gradle\caches\transforms-3\8ef1b8ff2858effc16228738e0cf3094\transformed\annotation-experimental-1.3.0\res
+com.aliadas.test.app-core-1.5.0-1 C:\Users\Bannelita\.gradle\caches\transforms-3\f3459a58503d1fddb5db3040482f0664\transformed\core-1.5.0\res
+com.aliadas.test.app-androidTest-2 C:\Users\Bannelita\Aliadas\frontend\app\build\generated\res\resValues\androidTest\debug
+com.aliadas.test.app-mergeDebugAndroidTestResources-3 C:\Users\Bannelita\Aliadas\frontend\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.aliadas.test.app-mergeDebugAndroidTestResources-4 C:\Users\Bannelita\Aliadas\frontend\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.aliadas.test.app-merged_res-5 C:\Users\Bannelita\Aliadas\frontend\app\build\intermediates\merged_res\debugAndroidTest

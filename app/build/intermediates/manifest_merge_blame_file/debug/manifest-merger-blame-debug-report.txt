@@ -1,0 +1,299 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliadas"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:3:5-66
+11-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:4:5-78
+12-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:4:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:5:5-75
+13-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:5:22-73
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:7:5-78
+14-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:7:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:8:5-80
+15-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+16-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:9:5-84
+16-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:9:22-82
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:10:5-76
+17-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:10:22-74
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+18-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:11:5-85
+18-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:11:22-83
+19    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+19-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:12:5-94
+19-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:12:22-92
+20    <uses-permission
+20-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:14:5-107
+21        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+21-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:14:22-78
+22        android:maxSdkVersion="28" />
+22-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:14:79-105
+23    <uses-permission android:name="android.permission.SEND_SMS" />
+23-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:16:5-66
+23-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:16:22-64
+24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+24-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:17:5-80
+24-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:17:22-78
+25    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+25-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:18:5-76
+25-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:18:22-74
+26    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:20:5-74
+26-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:20:22-72
+27    <uses-permission android:name="android.permission.READ_CONTACTS" />
+27-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:21:5-71
+27-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:21:22-69
+28    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+28-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:22:5-71
+28-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:22:22-69
+29    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+29-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:23:5-80
+29-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:23:22-78
+30    <uses-permission android:name="android.permission.BATTERY_STATS" />
+30-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:25:5-71
+30-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:25:22-69
+31
+32    <permission
+32-->[androidx.core:core:1.12.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4dde0fce54f6341b6da19770f76a2130\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+33        android:name="com.aliadas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+33-->[androidx.core:core:1.12.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4dde0fce54f6341b6da19770f76a2130\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+34        android:protectionLevel="signature" />
+34-->[androidx.core:core:1.12.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4dde0fce54f6341b6da19770f76a2130\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+35
+36    <uses-permission android:name="com.aliadas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+36-->[androidx.core:core:1.12.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4dde0fce54f6341b6da19770f76a2130\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+36-->[androidx.core:core:1.12.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4dde0fce54f6341b6da19770f76a2130\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+37
+38    <supports-screens
+38-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:9:5-12:40
+39        android:anyDensity="true"
+39-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:10:9-34
+40        android:largeScreens="true"
+40-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:11:9-36
+41        android:normalScreens="true" />
+41-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:12:9-37
+42
+43    <uses-feature
+43-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:14:5-16:36
+44        android:name="android.hardware.location.network"
+44-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:15:9-57
+45        android:required="false" />
+45-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:16:9-33
+46    <uses-feature
+46-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:17:5-19:36
+47        android:name="android.hardware.location.gps"
+47-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:18:9-53
+48        android:required="false" />
+48-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:19:9-33
+49    <uses-feature
+49-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:20:5-22:36
+50        android:name="android.hardware.telephony"
+50-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:21:9-50
+51        android:required="false" />
+51-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:22:9-33
+52    <uses-feature
+52-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:23:5-25:36
+53        android:name="android.hardware.wifi"
+53-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:24:9-45
+54        android:required="false" />
+54-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\Bannelita\.gradle\caches\transforms-3\20961dcaf57be458d34b47f8a66b9ce6\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:25:9-33
+55
+56    <application
+56-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:27:5-73:19
+57        android:allowBackup="true"
+57-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:28:9-35
+58        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+58-->[androidx.core:core:1.12.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4dde0fce54f6341b6da19770f76a2130\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+59        android:debuggable="true"
+60        android:extractNativeLibs="false"
+61        android:icon="@mipmap/ic_launcher"
+61-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:29:9-43
+62        android:label="@string/app_name"
+62-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:30:9-41
+63        android:roundIcon="@mipmap/ic_launcher_round"
+63-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:31:9-54
+64        android:supportsRtl="true"
+64-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:32:9-35
+65        android:testOnly="true"
+66        android:theme="@style/Theme.Aliadas"
+66-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:33:9-45
+67        android:usesCleartextTraffic="true" >
+67-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:34:9-44
+68        <activity
+68-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:36:9-39:58
+69            android:name="com.aliadas.MainActivity"
+69-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:37:13-41
+70            android:exported="false"
+70-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:38:13-37
+71            android:windowSoftInputMode="adjustResize" />
+71-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:39:13-55
+72        <activity
+72-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:41:9-49:20
+73            android:name="com.aliadas.auth.LoginActivity"
+73-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:42:13-47
+74            android:exported="true"
+74-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:43:13-36
+75            android:windowSoftInputMode="adjustResize" >
+75-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:44:13-55
+76            <intent-filter>
+76-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:45:13-48:29
+77                <action android:name="android.intent.action.MAIN" />
+77-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:46:17-68
+77-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:46:25-66
+78
+79                <category android:name="android.intent.category.LAUNCHER" />
+79-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:47:17-76
+79-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:47:27-74
+80            </intent-filter>
+81        </activity>
+82
+83        <service
+83-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:51:9-54:39
+84            android:name="com.aliadas.contacts.AlertService"
+84-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:52:13-50
+85            android:exported="false"
+85-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:54:13-37
+86            android:foregroundServiceType="location" />
+86-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:53:13-53
+87
+88        <receiver
+88-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:56:9-63:20
+89            android:name="com.aliadas.contacts.CallReceiver"
+89-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:57:13-50
+90            android:exported="true" >
+90-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:58:13-36
+91            <intent-filter>
+91-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:59:13-62:29
+92                <action android:name="android.intent.action.PHONE_STATE" />
+92-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:60:17-75
+92-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:60:25-73
+93                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+93-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:61:17-81
+93-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:61:25-79
+94            </intent-filter>
+95        </receiver>
+96        <receiver
+96-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:65:9-71:20
+97            android:name="com.aliadas.contacts.UnlockReceiver"
+97-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:66:13-52
+98            android:exported="true" >
+98-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:67:13-36
+99            <intent-filter android:priority="999" >
+99-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:68:13-70:29
+99-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:68:28-50
+100                <action android:name="android.intent.action.USER_PRESENT" />
+100-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:69:17-76
+100-->C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:69:25-74
+101            </intent-filter>
+102        </receiver>
+103
+104        <activity
+104-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\0179c80c7b578faec30bb4a8a0edbd8c\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+105            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+105-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\0179c80c7b578faec30bb4a8a0edbd8c\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+106            android:exported="false"
+106-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\0179c80c7b578faec30bb4a8a0edbd8c\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+107-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\0179c80c7b578faec30bb4a8a0edbd8c\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+108
+109        <provider
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+110            android:name="androidx.startup.InitializationProvider"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+111            android:authorities="com.aliadas.androidx-startup"
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+112            android:exported="false" >
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+113            <meta-data
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+115                android:value="androidx.startup" />
+115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bannelita\.gradle\caches\transforms-3\ebd7e8b0739ea5852a86f1ec4bdee03d\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bannelita\.gradle\caches\transforms-3\f32f8a6bb35ea86a0bdc621e810ebd3e\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+117-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bannelita\.gradle\caches\transforms-3\f32f8a6bb35ea86a0bdc621e810ebd3e\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+118                android:value="androidx.startup" />
+118-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bannelita\.gradle\caches\transforms-3\f32f8a6bb35ea86a0bdc621e810ebd3e\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+121                android:value="androidx.startup" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+122        </provider>
+123
+124        <uses-library
+124-->[androidx.window:window:1.0.0] C:\Users\Bannelita\.gradle\caches\transforms-3\94ce22b4f73e993f3f9661e56f6c1130\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+125            android:name="androidx.window.extensions"
+125-->[androidx.window:window:1.0.0] C:\Users\Bannelita\.gradle\caches\transforms-3\94ce22b4f73e993f3f9661e56f6c1130\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+126            android:required="false" />
+126-->[androidx.window:window:1.0.0] C:\Users\Bannelita\.gradle\caches\transforms-3\94ce22b4f73e993f3f9661e56f6c1130\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+127        <uses-library
+127-->[androidx.window:window:1.0.0] C:\Users\Bannelita\.gradle\caches\transforms-3\94ce22b4f73e993f3f9661e56f6c1130\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+128            android:name="androidx.window.sidecar"
+128-->[androidx.window:window:1.0.0] C:\Users\Bannelita\.gradle\caches\transforms-3\94ce22b4f73e993f3f9661e56f6c1130\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+129            android:required="false" />
+129-->[androidx.window:window:1.0.0] C:\Users\Bannelita\.gradle\caches\transforms-3\94ce22b4f73e993f3f9661e56f6c1130\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+130
+131        <meta-data
+131-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\2bcf5ad04309a0555e69b17d4413d06a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+132            android:name="com.google.android.gms.version"
+132-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\2bcf5ad04309a0555e69b17d4413d06a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+133            android:value="@integer/google_play_services_version" />
+133-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\2bcf5ad04309a0555e69b17d4413d06a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+134
+135        <receiver
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+136            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+137            android:directBootAware="false"
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+138            android:enabled="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+139            android:exported="true"
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+140            android:permission="android.permission.DUMP" >
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+141            <intent-filter>
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+142                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+143            </intent-filter>
+144            <intent-filter>
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+145                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+146            </intent-filter>
+147            <intent-filter>
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+148                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+149            </intent-filter>
+150            <intent-filter>
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+151                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bannelita\.gradle\caches\transforms-3\19e15dbf13abf551346cc809eecbb624\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+152            </intent-filter>
+153        </receiver>
+154    </application>
+155
+156</manifest>

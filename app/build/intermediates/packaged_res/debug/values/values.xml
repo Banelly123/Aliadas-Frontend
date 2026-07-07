@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F8F6FB</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="green_success">#43A047</color>
+    <color name="nav_icon_selected">#6B35C7</color>
+    <color name="nav_icon_unselected">#9E9E9E</color>
+    <color name="orange_accent">#F57C00</color>
+    <color name="purple_accent">#7F00FF</color>
+    <color name="purple_dark">#4A249A</color>
+    <color name="purple_light">#EDE7F6</color>
+    <color name="purple_primary">#6B35C7</color>
+    <color name="purple_surface">#F3EEFF</color>
+    <color name="red_error">#B00020</color>
+    <color name="red_panic">#E53935</color>
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Aliadas</string>
+    <string name="nav_community">Comunidad</string>
+    <string name="nav_contacts">Contactos</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_resources">Recursos</string>
+    <style name="AliadadChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/purple_light</item>
+        <item name="chipStrokeColor">@color/purple_primary</item>
+        <item name="android:textColor">@color/purple_primary</item>
+        <item name="checkedIconTint">@color/purple_primary</item>
+    </style>
+    <style name="AliadasAlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorAccent">@color/purple_primary</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_rounded</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AliadasDialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AliadasDialogButtonStyle</item>
+    </style>
+    <style name="AliadasDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/purple_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NavIconTint">
+        <item name="android:state_checked">@color/purple_primary</item>
+        <item name="android:state_selected">@color/purple_primary</item>
+        <item name="android:state_enabled">@color/text_secondary</item>
+    </style>
+    <style name="Theme.Aliadas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_light</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/purple_primary</item>
+        <item name="chipStyle">@style/AliadadChipStyle</item>
+        <item name="alertDialogTheme">@style/AliadasAlertDialogTheme</item>
+    </style>
+</resources>

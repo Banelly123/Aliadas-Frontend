@@ -1,0 +1,3 @@
+com.aliadas.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
