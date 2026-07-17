@@ -64,7 +64,7 @@ class HomeFragment : Fragment() {
         if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             getDeviceLocation()
         } else {
-            // Solicitar permisos en pantalla si no los tiene
+            // Solicitar permisos en pantalla
             requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION), 1001)
         }
     }
