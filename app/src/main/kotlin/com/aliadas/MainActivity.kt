@@ -18,6 +18,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.aliadas.auth.LoginActivity
 import com.aliadas.databinding.ActivityMainBinding
+import com.aliadas.utils.LastUnlockManager
 import com.aliadas.utils.SessionManager
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         // 1. Pedir permisos críticos de inmediato
         requestInitialPermissions()
         requestIgnoreBatteryOptimizations()
+        requestUsageAccessIfNeeded()
 
         // 2. Verificación de sesión
         val token = SessionManager.getBearerToken(this)
@@ -61,15 +63,6 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setupWithNavController(navController)
     }
 
-    override fun onResume() {
-        super.onResume()
-        // Registrar actividad actual como último "desbloqueo/presencia"
-        val prefs = getSharedPreferences("ConfiguracionApp", Context.MODE_PRIVATE)
-        val now = System.currentTimeMillis()
-        prefs.edit().putLong("ultima_vez", now).commit()
-        android.util.Log.d("ALIADAS", "Presencia registrada en MainActivity: $now")
-    }
-
     private fun requestInitialPermissions() {
         val permissions = mutableListOf(
             Manifest.permission.ACCESS_FINE_LOCATION,
@@ -79,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             Manifest.permission.READ_CALL_LOG,
             Manifest.permission.READ_CONTACTS
         )
-        
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             permissions.add(Manifest.permission.POST_NOTIFICATIONS)
         }
@@ -129,5 +122,38 @@ class MainActivity : AppCompatActivity() {
                 e.printStackTrace()
             }
         }
+    }
+
+    private fun requestUsageAccessIfNeeded() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P ||
+            LastUnlockManager.hasUsageAccess(this)
+        ) {
+            return
+        }
+
+        val prefs = getSharedPreferences("ConfiguracionApp", Context.MODE_PRIVATE)
+        if (prefs.getBoolean("usage_access_prompted", false)) return
+        prefs.edit().putBoolean("usage_access_prompted", true).apply()
+
+        AlertDialog.Builder(this)
+            .setTitle("Permitir acceso al uso")
+            .setMessage(
+                "Aliadas necesita este acceso para incluir en la alerta la hora real " +
+                        "del último desbloqueo del teléfono. En la siguiente pantalla, " +
+                        "busca Aliadas y activa el permiso."
+            )
+            .setPositiveButton("Configurar") { _, _ ->
+                try {
+                    startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+                } catch (e: Exception) {
+                    Toast.makeText(
+                        this,
+                        "No fue posible abrir la configuración de acceso al uso",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+            .setNegativeButton("Más tarde", null)
+            .show()
     }
 }

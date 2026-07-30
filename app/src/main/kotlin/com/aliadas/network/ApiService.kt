@@ -50,8 +50,7 @@ data class ProfileResponse(
 
 data class UpdateProfileRequest(
     val name: String? = null,
-    @SerializedName("avatar_icon") val avatarIcon: String? = null,
-    @SerializedName("avatarIcon") val avatarIconCamel: String? = null
+    @SerializedName("avatarIcon") val avatarIcon: String? = null
 )
 
 // ── API Interface ──────────────────────────────────────────────────────────

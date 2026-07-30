@@ -13,6 +13,7 @@ import android.telephony.TelephonyManager
 import android.util.Log
 import androidx.core.app.ActivityCompat
 import com.aliadas.network.RetrofitClient
+import com.aliadas.utils.LastUnlockManager
 import com.aliadas.utils.SessionManager
 import com.google.android.gms.location.LocationServices
 import kotlinx.coroutines.*
@@ -23,7 +24,7 @@ import kotlin.coroutines.suspendCoroutine
 class AlertService : Service() {
 
     private val serviceScope = CoroutineScope(Dispatchers.IO + Job())
-    
+
     companion object {
         const val EXTRA_TARGET_PHONE = "extra_target_phone"
         const val ACTION_START = "com.aliadas.START_ALARM"
@@ -74,7 +75,7 @@ class AlertService : Service() {
             if (targetPhone != null) putExtra(EXTRA_TARGET_PHONE, targetPhone)
         }
         val pendingIntent = PendingIntent.getService(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
-        
+
         alarmManager.setExactAndAllowWhileIdle(
             AlarmManager.RTC_WAKEUP,
             System.currentTimeMillis() + 60_000,
@@ -86,9 +87,9 @@ class AlertService : Service() {
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, AlertService::class.java).apply { action = ACTION_START }
         val pendingIntent = PendingIntent.getService(this, 0, intent, PendingIntent.FLAG_NO_CREATE or PendingIntent.FLAG_IMMUTABLE)
-        pendingIntent?.let { 
+        pendingIntent?.let {
             alarmManager.cancel(it)
-            it.cancel() 
+            it.cancel()
         }
     }
 
@@ -97,7 +98,7 @@ class AlertService : Service() {
         val fusedClient = LocationServices.getFusedLocationProviderClient(context)
         var lat: Double? = null
         var lng: Double? = null
-        
+
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             try {
                 val location = withContext(Dispatchers.Main) {
@@ -111,7 +112,7 @@ class AlertService : Service() {
         }
 
         val message = buildSmsMessage(context, lat, lng)
-        
+
         if (targetPhone != null) {
             sendSms(targetPhone, message)
         } else {
@@ -131,11 +132,8 @@ class AlertService : Service() {
         val loc = if (lat != null && lng != null) "📍 Ubicación: https://maps.google.com/?q=$lat,$lng" else "📍 Ubicación no disponible"
         val battery = (context.getSystemService(Context.BATTERY_SERVICE) as BatteryManager).getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)
         val networkInfo = getNetworkInfo(context)
-        
-        // Leer exactamente del mismo archivo unificado
-        val prefs = context.getSharedPreferences("ConfiguracionApp", Context.MODE_PRIVATE)
-        val ultimaVez = prefs.getLong("ultima_vez", 0)
-        Log.d("ALIADAS", "Servicio leyó ultima_vez: $ultimaVez")
+
+        val ultimaVez = LastUnlockManager.getLastUnlockTime(context)
 
         val horaFormateada = if (ultimaVez == 0L) "No disponible" else
             java.text.SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).format(java.util.Date(ultimaVez))

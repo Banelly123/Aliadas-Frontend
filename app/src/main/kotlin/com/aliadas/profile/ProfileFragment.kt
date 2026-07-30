@@ -54,7 +54,7 @@ class ProfileFragment : Fragment() {
         // Gestión de Ubicación Compartida
         val isSharing = com.aliadas.utils.SessionManager.isLocationSharingEnabled(requireContext())
         binding.switchShareLocation.isChecked = isSharing
-        
+
         binding.switchShareLocation.setOnCheckedChangeListener { _, isChecked ->
             if (!isChecked) {
                 com.aliadas.contacts.AlertService.stop(requireContext())
@@ -84,7 +84,7 @@ class ProfileFragment : Fragment() {
                     val profile = res.body()!!
                     binding.etName.setText(profile.name)
                     binding.tvEmail.text = profile.email
-                    
+
                     if (!profile.avatarIcon.isNullOrEmpty()) {
                         val serverAvatar = cleanAvatarName(profile.avatarIcon!!)
                         // Solo actualizamos si el usuario no ha cambiado el avatar en esta sesión
@@ -128,7 +128,7 @@ class ProfileFragment : Fragment() {
         val dialogView = layoutInflater.inflate(R.layout.dialog_avatar_picker, null)
         val ivPreview = dialogView.findViewById<ImageView>(R.id.ivPreview)
         val rvAnimals = dialogView.findViewById<RecyclerView>(R.id.rvAnimals)
-        
+
         dialogView.findViewById<View>(R.id.layoutColors)?.parent?.let { (it as View).visibility = View.GONE }
 
         var selectedType = currentAvatar
@@ -192,11 +192,21 @@ class ProfileFragment : Fragment() {
         lifecycleScope.launch {
             try {
                 val token = SessionManager.getBearerToken(requireContext())
-                val res = RetrofitClient.api.updateProfile(token, UpdateProfileRequest(name, currentAvatar, currentAvatar))
+                val res = RetrofitClient.api.updateProfile(
+                    token,
+                    UpdateProfileRequest(name = name, avatarIcon = currentAvatar)
+                )
                 if (res.isSuccessful) {
-                    SessionManager.updateProfile(requireContext(), name, currentAvatar)
+                    val savedProfile = RetrofitClient.api.getProfile(token)
+                    val savedName = savedProfile.body()?.name ?: name
+                    val savedAvatar = savedProfile.body()?.avatarIcon
+                        ?.let(::cleanAvatarName)
+                        ?: currentAvatar
+                    currentAvatar = savedAvatar
+                    SessionManager.updateProfile(requireContext(), savedName, savedAvatar)
+                    binding.etName.setText(savedName)
                     Toast.makeText(requireContext(), "◈ Perfil actualizado", Toast.LENGTH_SHORT).show()
-                    updateAvatarImage(currentAvatar)
+                    updateAvatarImage(savedAvatar)
                 } else {
                     Toast.makeText(requireContext(), "Error al guardar cambios", Toast.LENGTH_SHORT).show()
                 }
