@@ -55,8 +55,26 @@ class HomeFragment : Fragment() {
             }
         }
 
-        binding.profileImageContainer.setOnClickListener {
+        binding.imgProfile.setOnClickListener {
             findNavController().navigate(R.id.profileFragment)
+        }
+
+        loadProfileAvatar()
+    }
+
+    private fun loadProfileAvatar() {
+        val avatarData = SessionManager.getAvatar(requireContext()) ?: "cat"
+        try {
+            // Manejar tanto formato simple "cat" como antiguo "cat:#color"
+            val type = if (avatarData.contains(":")) avatarData.split(":")[0] else avatarData
+            val colorStr = com.aliadas.profile.GeometricAvatarDrawable.getDefaultColorFor(type)
+            
+            val color = android.graphics.Color.parseColor(colorStr)
+            val drawable = com.aliadas.profile.GeometricAvatarDrawable(type, color)
+            binding.imgProfile.setImageDrawable(drawable)
+        } catch (e: Exception) {
+            val defaultColor = android.graphics.Color.parseColor("#FF80AB")
+            binding.imgProfile.setImageDrawable(com.aliadas.profile.GeometricAvatarDrawable("cat", defaultColor))
         }
     }
 
@@ -94,7 +112,11 @@ class HomeFragment : Fragment() {
         }
     }
 
-    override fun onResume() { super.onResume(); try { binding.mapView.onResume() } catch(e: Exception){} }
+    override fun onResume() { 
+        super.onResume()
+        loadProfileAvatar()
+        try { binding.mapView.onResume() } catch(e: Exception){} 
+    }
     override fun onPause() { super.onPause(); try { binding.mapView.onPause() } catch(e: Exception){} }
     override fun onDestroyView() { super.onDestroyView(); _binding = null }
 }

@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -27,9 +26,6 @@ public final class FragmentResourcesBinding implements ViewBinding {
   public final ImageView imgProfile;
 
   @NonNull
-  public final CardView profileImageContainer;
-
-  @NonNull
   public final RecyclerView rvResources;
 
   @NonNull
@@ -45,13 +41,11 @@ public final class FragmentResourcesBinding implements ViewBinding {
   public final TextView txtAppName;
 
   private FragmentResourcesBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView imgProfile, @NonNull CardView profileImageContainer,
-      @NonNull RecyclerView rvResources, @NonNull SwipeRefreshLayout swipeRefresh,
-      @NonNull ConstraintLayout topAppBar, @NonNull TextView tvEmpty,
-      @NonNull TextView txtAppName) {
+      @NonNull ImageView imgProfile, @NonNull RecyclerView rvResources,
+      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull ConstraintLayout topAppBar,
+      @NonNull TextView tvEmpty, @NonNull TextView txtAppName) {
     this.rootView = rootView;
     this.imgProfile = imgProfile;
-    this.profileImageContainer = profileImageContainer;
     this.rvResources = rvResources;
     this.swipeRefresh = swipeRefresh;
     this.topAppBar = topAppBar;
@@ -92,12 +86,6 @@ public final class FragmentResourcesBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profileImageContainer;
-      CardView profileImageContainer = ViewBindings.findChildViewById(rootView, id);
-      if (profileImageContainer == null) {
-        break missingId;
-      }
-
       id = R.id.rvResources;
       RecyclerView rvResources = ViewBindings.findChildViewById(rootView, id);
       if (rvResources == null) {
@@ -128,8 +116,8 @@ public final class FragmentResourcesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentResourcesBinding((ConstraintLayout) rootView, imgProfile,
-          profileImageContainer, rvResources, swipeRefresh, topAppBar, tvEmpty, txtAppName);
+      return new FragmentResourcesBinding((ConstraintLayout) rootView, imgProfile, rvResources,
+          swipeRefresh, topAppBar, tvEmpty, txtAppName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

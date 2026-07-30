@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -59,9 +58,6 @@ public final class FragmentCommunityBinding implements ViewBinding {
   public final ImageView imgProfile;
 
   @NonNull
-  public final CardView profileImageContainer;
-
-  @NonNull
   public final RecyclerView rvPosts;
 
   @NonNull
@@ -80,10 +76,9 @@ public final class FragmentCommunityBinding implements ViewBinding {
       @NonNull MaterialButton btnPublish, @NonNull Button chipApoyo, @NonNull Chip chipCatApoyo,
       @NonNull Chip chipCatDuda, @NonNull Chip chipCatReporte, @NonNull ChipGroup chipCategory,
       @NonNull Button chipPopular, @NonNull Button chipRecent, @NonNull EditText etPost,
-      @NonNull ImageView imgProfile, @NonNull CardView profileImageContainer,
-      @NonNull RecyclerView rvPosts, @NonNull SwipeRefreshLayout swipeRefresh,
-      @NonNull ConstraintLayout topAppBar, @NonNull TextView tvEmpty,
-      @NonNull TextView txtAppName) {
+      @NonNull ImageView imgProfile, @NonNull RecyclerView rvPosts,
+      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull ConstraintLayout topAppBar,
+      @NonNull TextView tvEmpty, @NonNull TextView txtAppName) {
     this.rootView = rootView;
     this.btnPublish = btnPublish;
     this.chipApoyo = chipApoyo;
@@ -95,7 +90,6 @@ public final class FragmentCommunityBinding implements ViewBinding {
     this.chipRecent = chipRecent;
     this.etPost = etPost;
     this.imgProfile = imgProfile;
-    this.profileImageContainer = profileImageContainer;
     this.rvPosts = rvPosts;
     this.swipeRefresh = swipeRefresh;
     this.topAppBar = topAppBar;
@@ -190,12 +184,6 @@ public final class FragmentCommunityBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profileImageContainer;
-      CardView profileImageContainer = ViewBindings.findChildViewById(rootView, id);
-      if (profileImageContainer == null) {
-        break missingId;
-      }
-
       id = R.id.rvPosts;
       RecyclerView rvPosts = ViewBindings.findChildViewById(rootView, id);
       if (rvPosts == null) {
@@ -228,7 +216,7 @@ public final class FragmentCommunityBinding implements ViewBinding {
 
       return new FragmentCommunityBinding((ConstraintLayout) rootView, btnPublish, chipApoyo,
           chipCatApoyo, chipCatDuda, chipCatReporte, chipCategory, chipPopular, chipRecent, etPost,
-          imgProfile, profileImageContainer, rvPosts, swipeRefresh, topAppBar, tvEmpty, txtAppName);
+          imgProfile, rvPosts, swipeRefresh, topAppBar, tvEmpty, txtAppName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

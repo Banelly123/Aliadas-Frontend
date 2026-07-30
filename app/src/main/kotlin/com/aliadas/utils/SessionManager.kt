@@ -31,6 +31,13 @@ object SessionManager {
         }
     }
 
+    suspend fun updateProfile(context: Context, name: String, avatar: String) {
+        context.dataStore.edit { prefs ->
+            prefs[USER_NAME_KEY] = name
+            prefs[AVATAR_KEY] = avatar
+        }
+    }
+
     fun setLocationSharing(context: Context, enabled: Boolean, scope: CoroutineScope? = null) {
         val work = {
             runBlocking {

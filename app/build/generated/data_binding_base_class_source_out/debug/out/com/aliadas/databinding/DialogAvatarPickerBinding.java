@@ -4,10 +4,11 @@ package com.aliadas.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridLayout;
-import android.widget.ScrollView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.aliadas.R;
@@ -17,19 +18,28 @@ import java.lang.String;
 
 public final class DialogAvatarPickerBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final GridLayout gridAvatars;
+  public final ImageView ivPreview;
 
-  private DialogAvatarPickerBinding(@NonNull ScrollView rootView, @NonNull GridLayout gridAvatars) {
+  @NonNull
+  public final LinearLayout layoutColors;
+
+  @NonNull
+  public final RecyclerView rvAnimals;
+
+  private DialogAvatarPickerBinding(@NonNull LinearLayout rootView, @NonNull ImageView ivPreview,
+      @NonNull LinearLayout layoutColors, @NonNull RecyclerView rvAnimals) {
     this.rootView = rootView;
-    this.gridAvatars = gridAvatars;
+    this.ivPreview = ivPreview;
+    this.layoutColors = layoutColors;
+    this.rvAnimals = rvAnimals;
   }
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +64,26 @@ public final class DialogAvatarPickerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.gridAvatars;
-      GridLayout gridAvatars = ViewBindings.findChildViewById(rootView, id);
-      if (gridAvatars == null) {
+      id = R.id.ivPreview;
+      ImageView ivPreview = ViewBindings.findChildViewById(rootView, id);
+      if (ivPreview == null) {
         break missingId;
       }
 
-      return new DialogAvatarPickerBinding((ScrollView) rootView, gridAvatars);
+      id = R.id.layoutColors;
+      LinearLayout layoutColors = ViewBindings.findChildViewById(rootView, id);
+      if (layoutColors == null) {
+        break missingId;
+      }
+
+      id = R.id.rvAnimals;
+      RecyclerView rvAnimals = ViewBindings.findChildViewById(rootView, id);
+      if (rvAnimals == null) {
+        break missingId;
+      }
+
+      return new DialogAvatarPickerBinding((LinearLayout) rootView, ivPreview, layoutColors,
+          rvAnimals);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
