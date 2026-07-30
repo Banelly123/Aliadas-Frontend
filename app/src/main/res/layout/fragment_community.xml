@@ -237,41 +237,59 @@
                         android:orientation="horizontal"
                         android:paddingBottom="4dp">
 
-                        <Button
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/chipRecent"
-                            style="?android:attr/borderlessButtonStyle"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
-                            android:background="@drawable/bg_pill_active"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:paddingHorizontal="18dp"
                             android:text="Recientes"
                             android:textAllCaps="false"
                             android:textColor="#FFFFFF"
                             android:textSize="13sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:backgroundTint="#6B35C7"
+                            app:cornerRadius="999dp"
+                            app:insetTop="0dp"
+                            app:insetBottom="0dp" />
 
-                        <Button
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/chipPopular"
-                            style="?android:attr/borderlessButtonStyle"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
                             android:layout_marginStart="8dp"
-                            android:background="@drawable/bg_pill_inactive"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:paddingHorizontal="18dp"
                             android:text="Populares"
                             android:textAllCaps="false"
-                            android:textColor="#6100C5"
-                            android:textSize="13sp" />
+                            android:textColor="#4A249A"
+                            android:textSize="13sp"
+                            app:backgroundTint="#F3EEFF"
+                            app:cornerRadius="999dp"
+                            app:insetTop="0dp"
+                            app:insetBottom="0dp" />
 
-                        <Button
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/chipApoyo"
-                            style="?android:attr/borderlessButtonStyle"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
                             android:layout_marginStart="8dp"
-                            android:background="@drawable/bg_pill_inactive"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:paddingHorizontal="18dp"
                             android:text="Apoyo Directo"
                             android:textAllCaps="false"
-                            android:textColor="#6100C5"
-                            android:textSize="13sp" />
+                            android:textColor="#4A249A"
+                            android:textSize="13sp"
+                            app:backgroundTint="#F3EEFF"
+                            app:cornerRadius="999dp"
+                            app:insetTop="0dp"
+                            app:insetBottom="0dp" />
                     </LinearLayout>
                 </HorizontalScrollView>
 

@@ -59,10 +59,6 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "Función de recuperación en desarrollo... 💜", Toast.LENGTH_SHORT).show()
         }
 
-        // Simulación para el botón externo de Google
-        binding.btnGoogleLogin.setOnClickListener {
-            Toast.makeText(this, "Conectando con Google Services...", Toast.LENGTH_SHORT).show()
-        }
     }
 
     /**
