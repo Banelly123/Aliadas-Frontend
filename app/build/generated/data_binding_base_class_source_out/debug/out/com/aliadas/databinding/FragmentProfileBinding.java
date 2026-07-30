@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -46,9 +45,6 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ImageView ivAvatarToolbar;
 
   @NonNull
-  public final CardView profileImageContainer;
-
-  @NonNull
   public final SwitchMaterial switchNotifications;
 
   @NonNull
@@ -67,9 +63,9 @@ public final class FragmentProfileBinding implements ViewBinding {
       @NonNull MaterialButton btnChangeAvatar, @NonNull MaterialButton btnLogout,
       @NonNull MaterialButton btnSave, @NonNull TextInputEditText etName,
       @NonNull ImageView ivAvatar, @NonNull ImageView ivAvatarToolbar,
-      @NonNull CardView profileImageContainer, @NonNull SwitchMaterial switchNotifications,
-      @NonNull SwitchMaterial switchShareLocation, @NonNull ConstraintLayout topAppBar,
-      @NonNull TextView tvEmail, @NonNull TextView txtAppName) {
+      @NonNull SwitchMaterial switchNotifications, @NonNull SwitchMaterial switchShareLocation,
+      @NonNull ConstraintLayout topAppBar, @NonNull TextView tvEmail,
+      @NonNull TextView txtAppName) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnChangeAvatar = btnChangeAvatar;
@@ -78,7 +74,6 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.etName = etName;
     this.ivAvatar = ivAvatar;
     this.ivAvatarToolbar = ivAvatarToolbar;
-    this.profileImageContainer = profileImageContainer;
     this.switchNotifications = switchNotifications;
     this.switchShareLocation = switchShareLocation;
     this.topAppBar = topAppBar;
@@ -155,12 +150,6 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profileImageContainer;
-      CardView profileImageContainer = ViewBindings.findChildViewById(rootView, id);
-      if (profileImageContainer == null) {
-        break missingId;
-      }
-
       id = R.id.switchNotifications;
       SwitchMaterial switchNotifications = ViewBindings.findChildViewById(rootView, id);
       if (switchNotifications == null) {
@@ -192,8 +181,8 @@ public final class FragmentProfileBinding implements ViewBinding {
       }
 
       return new FragmentProfileBinding((ConstraintLayout) rootView, btnBack, btnChangeAvatar,
-          btnLogout, btnSave, etName, ivAvatar, ivAvatarToolbar, profileImageContainer,
-          switchNotifications, switchShareLocation, topAppBar, tvEmail, txtAppName);
+          btnLogout, btnSave, etName, ivAvatar, ivAvatarToolbar, switchNotifications,
+          switchShareLocation, topAppBar, tvEmail, txtAppName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

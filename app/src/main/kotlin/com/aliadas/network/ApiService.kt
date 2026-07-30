@@ -13,7 +13,12 @@ import java.util.concurrent.TimeUnit
 // ── Data classes ───────────────────────────────────────────────────────────
 data class RegisterRequest(val name: String, val email: String, val password: String)
 data class LoginRequest(val email: String, val password: String)
-data class AuthResponse(val token: String, val userId: Int, val name: String, val avatarIcon: String)
+data class AuthResponse(
+    val token: String,
+    @SerializedName("userId") val userId: Int,
+    val name: String,
+    @SerializedName(value = "avatarIcon", alternate = ["avatar_icon"]) val avatarIcon: String? = null
+)
 
 data class ContactRequest(val name: String, val phone: String, val relation: String = "Contacto")
 data class ContactResponse(val id: Int, val name: String, val phone: String, val relation: String, val isActive: Boolean)
@@ -36,8 +41,18 @@ data class ResourceResponse(
     val icon: String, val isAvailable24h: Boolean
 )
 
-data class ProfileResponse(val id: Int, val name: String, val email: String, val avatarIcon: String)
-data class UpdateProfileRequest(val name: String? = null, val avatarIcon: String? = null)
+data class ProfileResponse(
+    val id: Int,
+    val name: String,
+    val email: String,
+    @SerializedName(value = "avatarIcon", alternate = ["avatar_icon"]) val avatarIcon: String? = null
+)
+
+data class UpdateProfileRequest(
+    val name: String? = null,
+    @SerializedName("avatar_icon") val avatarIcon: String? = null,
+    @SerializedName("avatarIcon") val avatarIconCamel: String? = null
+)
 
 // ── API Interface ──────────────────────────────────────────────────────────
 interface AlidasApi {

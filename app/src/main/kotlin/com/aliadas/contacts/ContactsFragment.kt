@@ -43,14 +43,29 @@ class ContactsFragment : Fragment() {
         binding.rvContacts.layoutManager = LinearLayoutManager(requireContext())
         binding.rvContacts.adapter = adapter
 
-        binding.profileImageContainer.setOnClickListener {
+        binding.imgProfile.setOnClickListener {
             findNavController().navigate(R.id.profileFragment)
         }
 
+        loadProfileAvatar()
         binding.fabAdd.setOnClickListener { showAddContactDialog() }
         binding.swipeRefresh.setOnRefreshListener { loadContacts() }
 
         loadContacts()
+    }
+
+    private fun loadProfileAvatar() {
+        val avatarData = SessionManager.getAvatar(requireContext()) ?: "cat"
+        try {
+            val type = if (avatarData.contains(":")) avatarData.split(":")[0] else avatarData
+            val colorStr = com.aliadas.profile.GeometricAvatarDrawable.getDefaultColorFor(type)
+            val color = android.graphics.Color.parseColor(colorStr)
+            val drawable = com.aliadas.profile.GeometricAvatarDrawable(type, color)
+            binding.imgProfile.setImageDrawable(drawable)
+        } catch (e: Exception) {
+            val defaultColor = android.graphics.Color.parseColor("#FF80AB")
+            binding.imgProfile.setImageDrawable(com.aliadas.profile.GeometricAvatarDrawable("cat", defaultColor))
+        }
     }
 
     private fun loadContacts() {
@@ -187,6 +202,11 @@ class ContactsFragment : Fragment() {
             }
             SessionManager.saveTrustedContacts(requireContext(), jsonArray.toString())
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        loadProfileAvatar()
     }
 
     override fun onDestroyView() {

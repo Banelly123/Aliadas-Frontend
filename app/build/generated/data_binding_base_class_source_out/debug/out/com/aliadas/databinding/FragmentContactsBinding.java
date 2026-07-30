@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -31,9 +30,6 @@ public final class FragmentContactsBinding implements ViewBinding {
   public final ImageView imgProfile;
 
   @NonNull
-  public final CardView profileImageContainer;
-
-  @NonNull
   public final RecyclerView rvContacts;
 
   @NonNull
@@ -50,13 +46,12 @@ public final class FragmentContactsBinding implements ViewBinding {
 
   private FragmentContactsBinding(@NonNull ConstraintLayout rootView,
       @NonNull MaterialButton fabAdd, @NonNull ImageView imgProfile,
-      @NonNull CardView profileImageContainer, @NonNull RecyclerView rvContacts,
-      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull ConstraintLayout topAppBar,
-      @NonNull TextView tvEmpty, @NonNull TextView txtAppName) {
+      @NonNull RecyclerView rvContacts, @NonNull SwipeRefreshLayout swipeRefresh,
+      @NonNull ConstraintLayout topAppBar, @NonNull TextView tvEmpty,
+      @NonNull TextView txtAppName) {
     this.rootView = rootView;
     this.fabAdd = fabAdd;
     this.imgProfile = imgProfile;
-    this.profileImageContainer = profileImageContainer;
     this.rvContacts = rvContacts;
     this.swipeRefresh = swipeRefresh;
     this.topAppBar = topAppBar;
@@ -103,12 +98,6 @@ public final class FragmentContactsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profileImageContainer;
-      CardView profileImageContainer = ViewBindings.findChildViewById(rootView, id);
-      if (profileImageContainer == null) {
-        break missingId;
-      }
-
       id = R.id.rvContacts;
       RecyclerView rvContacts = ViewBindings.findChildViewById(rootView, id);
       if (rvContacts == null) {
@@ -140,7 +129,7 @@ public final class FragmentContactsBinding implements ViewBinding {
       }
 
       return new FragmentContactsBinding((ConstraintLayout) rootView, fabAdd, imgProfile,
-          profileImageContainer, rvContacts, swipeRefresh, topAppBar, tvEmpty, txtAppName);
+          rvContacts, swipeRefresh, topAppBar, tvEmpty, txtAppName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

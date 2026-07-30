@@ -38,9 +38,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final MapView mapView;
 
   @NonNull
-  public final CardView profileImageContainer;
-
-  @NonNull
   public final ConstraintLayout topAppBar;
 
   @NonNull
@@ -52,15 +49,14 @@ public final class FragmentHomeBinding implements ViewBinding {
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull CardView btnPanic,
       @NonNull CardView cardSecurityStatus, @NonNull ImageView imgProfile,
       @NonNull ConstraintLayout mapContainer, @NonNull MapView mapView,
-      @NonNull CardView profileImageContainer, @NonNull ConstraintLayout topAppBar,
-      @NonNull TextView tvWelcome, @NonNull TextView txtAppName) {
+      @NonNull ConstraintLayout topAppBar, @NonNull TextView tvWelcome,
+      @NonNull TextView txtAppName) {
     this.rootView = rootView;
     this.btnPanic = btnPanic;
     this.cardSecurityStatus = cardSecurityStatus;
     this.imgProfile = imgProfile;
     this.mapContainer = mapContainer;
     this.mapView = mapView;
-    this.profileImageContainer = profileImageContainer;
     this.topAppBar = topAppBar;
     this.tvWelcome = tvWelcome;
     this.txtAppName = txtAppName;
@@ -123,12 +119,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profileImageContainer;
-      CardView profileImageContainer = ViewBindings.findChildViewById(rootView, id);
-      if (profileImageContainer == null) {
-        break missingId;
-      }
-
       id = R.id.topAppBar;
       ConstraintLayout topAppBar = ViewBindings.findChildViewById(rootView, id);
       if (topAppBar == null) {
@@ -148,8 +138,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, btnPanic, cardSecurityStatus,
-          imgProfile, mapContainer, mapView, profileImageContainer, topAppBar, tvWelcome,
-          txtAppName);
+          imgProfile, mapContainer, mapView, topAppBar, tvWelcome, txtAppName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

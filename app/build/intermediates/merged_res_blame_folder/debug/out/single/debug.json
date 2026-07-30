@@ -124,10 +124,6 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_preference_group.xml"
     },
     {
-        "merged": "com.aliadas.app-merged_res-55:/drawable_ic_aliadas_logo.xml.flat",
-        "source": "com.aliadas.app-main-57:/drawable/ic_aliadas_logo.xml"
-    },
-    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_dialog_avatar_picker.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\dialog_avatar_picker.xml"
     },
@@ -208,6 +204,10 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_avatar_wave.xml"
     },
     {
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_avatar_selector_selected.xml.flat",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_avatar_selector_selected.xml"
+    },
+    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_label.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_label.xml"
     },
@@ -230,6 +230,10 @@
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_dialog_rounded.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_dialog_rounded.xml"
+    },
+    {
+        "merged": "com.aliadas.app-merged_res-55:/layout_fragment_contacts.xml.flat",
+        "source": "com.aliadas.app-main-57:/layout/fragment_contacts.xml"
     },
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_emergency.xml.flat",
@@ -332,6 +336,10 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\bg_send_btn.xml"
     },
     {
+        "merged": "com.aliadas.app-merged_res-55:/layout_fragment_community.xml.flat",
+        "source": "com.aliadas.app-main-57:/layout/fragment_community.xml"
+    },
+    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_call.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_call.xml"
     },
@@ -388,6 +396,10 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\bottom_sheet_comments.xml"
     },
     {
+        "merged": "com.aliadas.app-merged_res-55:/layout_fragment_home.xml.flat",
+        "source": "com.aliadas.app-main-57:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_library_books.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_library_books.xml"
     },
@@ -406,6 +418,10 @@
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_item_comment.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_comment.xml"
+    },
+    {
+        "merged": "com.aliadas.app-merged_res-55:/layout_fragment_resources.xml.flat",
+        "source": "com.aliadas.app-main-57:/layout/fragment_resources.xml"
     },
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_bg_role_tag.xml.flat",

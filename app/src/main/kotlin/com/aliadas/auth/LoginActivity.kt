@@ -100,7 +100,9 @@ class LoginActivity : AppCompatActivity() {
                 val res = RetrofitClient.api.login(LoginRequest(email, password))
                 if (res.isSuccessful && res.body() != null) {
                     val body = res.body()!!
-                    SessionManager.saveSession(this@LoginActivity, body.token, body.userId, body.name, body.avatarIcon)
+                    val avatarRaw = body.avatarIcon ?: "cat"
+                    val avatar = if (avatarRaw.contains(":")) avatarRaw.split(":")[0] else avatarRaw
+                    SessionManager.saveSession(this@LoginActivity, body.token, body.userId, body.name, avatar)
                     Toast.makeText(this@LoginActivity, "¡Bienvenida, ${body.name}! 💜", Toast.LENGTH_SHORT).show()
                     startMain()
                 } else {
@@ -131,7 +133,9 @@ class LoginActivity : AppCompatActivity() {
                 val res = RetrofitClient.api.register(RegisterRequest(name, email, password))
                 if (res.isSuccessful && res.body() != null) {
                     val body = res.body()!!
-                    SessionManager.saveSession(this@LoginActivity, body.token, body.userId, body.name, body.avatarIcon)
+                    val avatarRaw = body.avatarIcon ?: "cat"
+                    val avatar = if (avatarRaw.contains(":")) avatarRaw.split(":")[0] else avatarRaw
+                    SessionManager.saveSession(this@LoginActivity, body.token, body.userId, body.name, avatar)
                     Toast.makeText(this@LoginActivity, "¡Cuenta creada con éxito! ✨", Toast.LENGTH_SHORT).show()
                     startMain()
                 } else {
