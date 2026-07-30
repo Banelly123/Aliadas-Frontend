@@ -205,7 +205,7 @@ class ProfileFragment : Fragment() {
                     currentAvatar = savedAvatar
                     SessionManager.updateProfile(requireContext(), savedName, savedAvatar)
                     binding.etName.setText(savedName)
-                    Toast.makeText(requireContext(), "◈ Perfil actualizado", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Perfil actualizado", Toast.LENGTH_SHORT).show()
                     updateAvatarImage(savedAvatar)
                 } else {
                     Toast.makeText(requireContext(), "Error al guardar cambios", Toast.LENGTH_SHORT).show()
