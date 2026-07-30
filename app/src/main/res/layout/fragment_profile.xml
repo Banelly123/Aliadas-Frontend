@@ -153,7 +153,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NOTIFICACIONES Y SEGURIDAD"
+                android:text="SEGURIDAD"
                 android:textColor="#4B4356"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -175,52 +175,6 @@
                     android:background="@drawable/bg_preference_group"
                     android:showDividers="middle"
                     android:divider="@drawable/bg_divider_line_horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:padding="14dp">
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            app:cardCornerRadius="18dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="#E1E1F5">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:padding="8dp"
-                                android:src="@drawable/ic_notifications_active"
-                                app:tint="#626374" />
-                        </androidx.cardview.widget.CardView>
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginStart="12dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Notificaciones de Alerta"
-                                android:textColor="#191C1D"
-                                android:textStyle="bold"
-                                android:textSize="14sp" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Alertas de zonas de riesgo"
-                                android:textColor="#4B4356"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                        <com.google.android.material.switchmaterial.SwitchMaterial
-                            android:id="@+id/switchNotifications"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true" />
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"

@@ -90,7 +90,11 @@ class ResourcesFragment : Fragment() {
                 val res = RetrofitClient.api.getResources(token)
                 if (res.isSuccessful && _binding != null) {
                     resourcesList.clear()
-                    resourcesList.addAll(res.body() ?: emptyList())
+                    val allResources = res.body() ?: emptyList()
+                    val filtered = allResources.filter { 
+                        !it.title.contains("Centros de Apoyo Cercanos", ignoreCase = true) 
+                    }
+                    resourcesList.addAll(filtered)
                     adapter.notifyDataSetChanged()
                     binding.tvEmpty.visibility = if (resourcesList.isEmpty()) View.VISIBLE else View.GONE
                 } else if (_binding != null) {
