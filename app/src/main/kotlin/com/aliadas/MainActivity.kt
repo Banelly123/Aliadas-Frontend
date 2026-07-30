@@ -15,6 +15,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.aliadas.auth.LoginActivity
 import com.aliadas.databinding.ActivityMainBinding
@@ -61,6 +62,16 @@ class MainActivity : AppCompatActivity() {
 
         // Sincronización del menú inferior
         binding.bottomNav.setupWithNavController(navController)
+        binding.bottomNav.setOnItemSelectedListener { item ->
+            // El perfil se abre sobre la pestaña actual. Antes de cambiar de
+            // pestaña lo retiramos del historial para que no vuelva a aparecer
+            // al regresar a la vista anterior.
+            if (navController.currentDestination?.id == R.id.profileFragment) {
+                navController.popBackStack()
+            }
+
+            NavigationUI.onNavDestinationSelected(item, navController)
+        }
     }
 
     private fun requestInitialPermissions() {
