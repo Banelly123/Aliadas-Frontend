@@ -1,5 +1,6 @@
 package com.aliadas.community
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.text.format.DateUtils
 import android.view.LayoutInflater
@@ -17,6 +18,7 @@ import com.aliadas.network.PostRequest
 import com.aliadas.network.PostResponse
 import com.aliadas.network.RetrofitClient
 import com.aliadas.utils.SessionManager
+import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.launch
 
 class CommunityFragment : Fragment() {
@@ -89,7 +91,7 @@ class CommunityFragment : Fragment() {
             try {
                 val token = SessionManager.getBearerToken(requireContext())
                 if (token.isEmpty()) return@launch
-                
+
                 val res = RetrofitClient.api.getPosts(token, currentFilter)
                 if (res.isSuccessful && _binding != null) {
                     posts.clear()
@@ -126,7 +128,7 @@ class CommunityFragment : Fragment() {
             try {
                 val token = SessionManager.getBearerToken(requireContext())
                 if (token.isEmpty()) return@launch
-                
+
                 val res = RetrofitClient.api.createPost(token, PostRequest(content, category))
                 if (res.isSuccessful && _binding != null) {
                     binding.etPost.setText("")
@@ -141,19 +143,22 @@ class CommunityFragment : Fragment() {
         }
     }
 
-    private fun updateFilterButtonsVisuals(selectedButton: View) {
-        val inactiveTextColor = resources.getColor(R.color.purple_primary, null)
-        val inactiveBg = R.drawable.bg_pill_inactive
-        
-        binding.chipRecent.setBackgroundResource(inactiveBg)
-        binding.chipRecent.setTextColor(inactiveTextColor)
-        binding.chipPopular.setBackgroundResource(inactiveBg)
-        binding.chipPopular.setTextColor(inactiveTextColor)
-        binding.chipApoyo.setBackgroundResource(inactiveBg)
-        binding.chipApoyo.setTextColor(inactiveTextColor)
+    private fun updateFilterButtonsVisuals(selectedButton: MaterialButton) {
+        val inactiveBackground = ColorStateList.valueOf(
+            resources.getColor(R.color.purple_surface, null)
+        )
+        val activeBackground = ColorStateList.valueOf(
+            resources.getColor(R.color.purple_primary, null)
+        )
+        val inactiveText = resources.getColor(R.color.purple_dark, null)
+        val activeText = resources.getColor(R.color.white, null)
 
-        selectedButton.setBackgroundResource(R.drawable.bg_pill_active)
-        (selectedButton as? android.widget.Button)?.setTextColor(resources.getColor(R.color.white, null))
+        listOf(binding.chipRecent, binding.chipPopular, binding.chipApoyo).forEach { button ->
+            val isSelected = button === selectedButton
+            button.backgroundTintList = if (isSelected) activeBackground else inactiveBackground
+            button.setTextColor(if (isSelected) activeText else inactiveText)
+            button.setTypeface(button.typeface, if (isSelected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
+        }
     }
 
     private fun likePost(post: PostResponse) {

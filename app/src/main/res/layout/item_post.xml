@@ -51,14 +51,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btnPostMenu"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_aliadas_logo"
-                app:tint="#4B4356"
-                android:layout_alignParentEnd="true" />
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
