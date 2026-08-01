@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="8dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="3dp"
-    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/white"
     android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hace 12 min"
-                    android:textColor="#4B4356"
+                    android:textColor="@color/text_secondary"
                     android:textSize="12sp" />
 
                 <View
@@ -46,19 +46,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Categoría: Seguridad"
-                    android:textColor="#64289b"
+                    android:textColor="@color/purple_on_surface"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btnPostMenu"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_aliadas_logo"
-                app:tint="#4B4356"
-                android:layout_alignParentEnd="true" />
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
@@ -68,7 +60,7 @@
             android:layout_marginTop="12dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="0dp"
-            app:cardBackgroundColor="#EDEEEF"
+            app:cardBackgroundColor="@color/surface_variant"
             android:visibility="gone"> <ImageView
             android:id="@+id/imgPostAttachment"
             android:layout_width="match_parent"
@@ -83,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Hola chicas, acabo de pasar por la calle 45 y noté que las luminarias están apagadas. Tengan cuidado si transitan por esa zona ahora mismo."
-            android:textColor="#191C1D"
+            android:textColor="@color/text_primary"
             android:textSize="14sp"
             android:lineSpacingExtra="4dp" />
 
@@ -111,14 +103,14 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_heart"
-                    app:tint="#4B4356" />
+                    app:tint="@color/text_secondary" />
                 <TextView
                     android:id="@+id/txtLikeCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
                     android:text="24"
-                    android:textColor="#4B4356"
+                    android:textColor="@color/text_secondary"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -138,14 +130,14 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_comment"
-                    app:tint="#4B4356" />
+                    app:tint="@color/text_secondary" />
                 <TextView
                     android:id="@+id/txtCommentCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
                     android:text="8 comentarios"
-                    android:textColor="#4B4356"
+                    android:textColor="@color/text_secondary"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>

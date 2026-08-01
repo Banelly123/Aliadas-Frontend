@@ -4,7 +4,6 @@ package com.aliadas.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,7 +30,7 @@ public final class FragmentCommunityBinding implements ViewBinding {
   public final MaterialButton btnPublish;
 
   @NonNull
-  public final Button chipApoyo;
+  public final MaterialButton chipApoyo;
 
   @NonNull
   public final Chip chipCatApoyo;
@@ -46,10 +45,10 @@ public final class FragmentCommunityBinding implements ViewBinding {
   public final ChipGroup chipCategory;
 
   @NonNull
-  public final Button chipPopular;
+  public final MaterialButton chipPopular;
 
   @NonNull
-  public final Button chipRecent;
+  public final MaterialButton chipRecent;
 
   @NonNull
   public final EditText etPost;
@@ -73,12 +72,13 @@ public final class FragmentCommunityBinding implements ViewBinding {
   public final TextView txtAppName;
 
   private FragmentCommunityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnPublish, @NonNull Button chipApoyo, @NonNull Chip chipCatApoyo,
-      @NonNull Chip chipCatDuda, @NonNull Chip chipCatReporte, @NonNull ChipGroup chipCategory,
-      @NonNull Button chipPopular, @NonNull Button chipRecent, @NonNull EditText etPost,
-      @NonNull ImageView imgProfile, @NonNull RecyclerView rvPosts,
-      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull ConstraintLayout topAppBar,
-      @NonNull TextView tvEmpty, @NonNull TextView txtAppName) {
+      @NonNull MaterialButton btnPublish, @NonNull MaterialButton chipApoyo,
+      @NonNull Chip chipCatApoyo, @NonNull Chip chipCatDuda, @NonNull Chip chipCatReporte,
+      @NonNull ChipGroup chipCategory, @NonNull MaterialButton chipPopular,
+      @NonNull MaterialButton chipRecent, @NonNull EditText etPost, @NonNull ImageView imgProfile,
+      @NonNull RecyclerView rvPosts, @NonNull SwipeRefreshLayout swipeRefresh,
+      @NonNull ConstraintLayout topAppBar, @NonNull TextView tvEmpty,
+      @NonNull TextView txtAppName) {
     this.rootView = rootView;
     this.btnPublish = btnPublish;
     this.chipApoyo = chipApoyo;
@@ -131,7 +131,7 @@ public final class FragmentCommunityBinding implements ViewBinding {
       }
 
       id = R.id.chipApoyo;
-      Button chipApoyo = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton chipApoyo = ViewBindings.findChildViewById(rootView, id);
       if (chipApoyo == null) {
         break missingId;
       }
@@ -161,13 +161,13 @@ public final class FragmentCommunityBinding implements ViewBinding {
       }
 
       id = R.id.chipPopular;
-      Button chipPopular = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton chipPopular = ViewBindings.findChildViewById(rootView, id);
       if (chipPopular == null) {
         break missingId;
       }
 
       id = R.id.chipRecent;
-      Button chipRecent = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton chipRecent = ViewBindings.findChildViewById(rootView, id);
       if (chipRecent == null) {
         break missingId;
       }

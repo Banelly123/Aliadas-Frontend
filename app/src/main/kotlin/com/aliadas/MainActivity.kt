@@ -62,6 +62,8 @@ class MainActivity : AppCompatActivity() {
 
         // Sincronización del menú inferior
         binding.bottomNav.setupWithNavController(navController)
+        binding.bottomNav.itemActiveIndicatorColor = ContextCompat.getColorStateList(this, R.color.purple_light)
+        binding.bottomNav.isItemActiveIndicatorEnabled = true
         binding.bottomNav.setOnItemSelectedListener { item ->
             // El perfil se abre sobre la pestaña actual. Antes de cambiar de
             // pestaña lo retiramos del historial para que no vuelva a aparecer

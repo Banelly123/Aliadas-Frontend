@@ -37,8 +37,8 @@
             android:hint="Escribe un comentario anónimo..."
             android:background="@drawable/bg_search"
             android:padding="10dp"
-            android:textColor="#1A1A2E"
-            android:textColorHint="#757575"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
             android:textSize="14sp" />
 
         <ImageButton

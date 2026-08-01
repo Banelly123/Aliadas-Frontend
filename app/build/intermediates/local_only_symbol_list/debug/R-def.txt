@@ -7,13 +7,19 @@ color nav_icon_color
 color nav_icon_selected
 color nav_icon_unselected
 color orange_accent
+color orange_surface
+color outline
 color purple_accent
 color purple_dark
 color purple_light
+color purple_on_surface
 color purple_primary
 color purple_surface
 color red_error
 color red_panic
+color red_panic_dark
+color surface_variant
+color text_on_primary_soft
 color text_primary
 color text_secondary
 color white
@@ -40,6 +46,7 @@ drawable bg_role_tag
 drawable bg_search
 drawable bg_send_btn
 drawable ic_aliadas_logo
+drawable ic_aliadas_logo_mark
 drawable ic_avatar_butterfly
 drawable ic_avatar_crown
 drawable ic_avatar_diamond
@@ -81,10 +88,8 @@ id bottomNav
 id btnBack
 id btnComment
 id btnEditContact
-id btnGoogleLogin
 id btnLike
 id btnPanic
-id btnPostMenu
 id btnPublish
 id btnSubmitLogin
 id btnToggleLoginPassword
@@ -136,7 +141,6 @@ id rvPosts
 id rvResources
 id rv_comments
 id swipeRefresh
-id switchNotifications
 id switchShareLocation
 id tilFullName
 id topAppBar
@@ -153,7 +157,6 @@ id tv_time
 id tv_title
 id txtAppName
 id txtCommentCount
-id txtForgotPassword
 id txtHeaderSubtitle
 id txtHeaderTitle
 id txtInitials
@@ -189,6 +192,7 @@ string nav_profile
 string nav_resources
 style AliadadChipStyle
 style AliadasAlertDialogTheme
+style AliadasButtonStyle
 style AliadasDialogButtonStyle
 style NavIconTint
 style Theme.Aliadas

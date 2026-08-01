@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F9FA"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:background="#F8F9FA"
+        android:background="@color/background"
         android:paddingHorizontal="20dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Aliadas"
-            android:textColor="#6100C5"
+            android:textColor="@color/purple_primary"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -74,8 +74,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="20dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="1dp"
+            app:cardBackgroundColor="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -94,7 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hola, estás segura aquí"
-                        android:textColor="#6100C5"
+                        android:textColor="@color/purple_primary"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:layout_alignParentStart="true"
@@ -103,7 +103,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_lock"
-                        app:tint="#6100C5"
+                        app:tint="@color/purple_primary"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true" />
                 </RelativeLayout>
@@ -126,7 +126,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Compartiendo ubicación en tiempo real"
-                        android:textColor="#270057"
+                        android:textColor="@color/purple_dark"
                         android:textSize="12sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -139,8 +139,8 @@
             android:layout_height="96dp"
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="48dp"
-            app:cardElevation="12dp"
-            app:cardBackgroundColor="#4B0082"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/red_panic"
             android:foreground="?attr/selectableItemBackground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -154,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SOS"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:letterSpacing="0.1" />
@@ -162,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PRESIONAR"
-                    android:textColor="#CCFFFFFF"
+                    android:textColor="@color/text_on_primary_soft"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp" />

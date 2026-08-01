@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F9FA">
+    android:background="@color/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:background="#F8F9FA"
+        android:background="@color/background"
         android:paddingHorizontal="20dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Aliadas"
-            android:textColor="#6100C5"
+            android:textColor="@color/purple_primary"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -71,8 +71,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Configuración Avanzada"
-                    android:textColor="#191C1D"
+                    android:text="Tu red de confianza"
+                    android:textColor="@color/text_primary"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -80,8 +80,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Gestiona tus protocolos de seguridad inteligente"
-                    android:textColor="#4B4356"
+                    android:text="Elige a las personas que pueden acompañarte en una emergencia"
+                    android:textColor="@color/text_secondary"
                     android:textSize="14sp" />
 
                 <LinearLayout
@@ -100,14 +100,14 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:src="@drawable/ic_lock"
-                            app:tint="#6100C5" />
+                            app:tint="@color/purple_primary" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginStart="12dp"
                             android:text="Si no respondes a una llamada de seguridad, compartiremos automáticamente tu ubicación en tiempo real, nivel de batería y estado de conexión con tus contactos de confianza."
-                            android:textColor="#4B4356"
+                            android:textColor="@color/text_secondary"
                             android:textSize="13sp"
                             android:lineSpacingExtra="3dp" />
                     </LinearLayout>
@@ -121,7 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Contactos de Confianza"
-                        android:textColor="#191C1D"
+                        android:textColor="@color/text_primary"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:layout_alignParentStart="true"
@@ -131,11 +131,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Añadir"
-                        android:textColor="#6100C5"
+                        android:textColor="@color/purple_primary"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        app:backgroundTint="#E1E1F5"
-                        app:cornerRadius="999dp"
+                        app:backgroundTint="@color/purple_light"
+                        app:cornerRadius="16dp"
                         android:insetTop="0dp"
                         android:insetBottom="0dp"
                         android:layout_alignParentEnd="true"
@@ -156,7 +156,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="No tienes contactos registrados"
-                    android:textColor="#4B4356"
+                    android:textColor="@color/text_secondary"
                     android:visibility="gone" />
 
             </LinearLayout>

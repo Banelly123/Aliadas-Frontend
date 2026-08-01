@@ -13,7 +13,7 @@ MERGED from [androidx.navigation:navigation-fragment:2.7.7] C:\Users\Bannelita\.
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] C:\Users\Bannelita\.gradle\caches\transforms-3\20118e164289b668615801317bee0178\transformed\navigation-fragment-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\Bannelita\.gradle\caches\transforms-3\b4de3028fbc8f96470b81aa97e51b2e9\transformed\navigation-ui-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\Bannelita\.gradle\caches\transforms-3\faa6bfba4424b2d8e3ad0e71a8462107\transformed\navigation-ui-2.7.7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bannelita\.gradle\caches\transforms-3\84114cdc67145947aeae5617e585aba8\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.10.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4a62cb928978837df06312d17288046f\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bannelita\.gradle\caches\transforms-3\3a9c143dc806935c0544adcf7cccee2c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Bannelita\.gradle\caches\transforms-3\82b31cb9f6aab621092c2b9d69fc8c15\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Bannelita\.gradle\caches\transforms-3\42349fcab7a5a6a21b6eefeb34a9888a\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -130,10 +130,10 @@ uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:17:5-80
 	android:name
 		ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:17:22-78
-uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:18:5-76
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:18:5-77
 	android:name
-		ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:18:22-74
+		ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:18:22-75
 uses-permission#android.permission.READ_PHONE_STATE
 ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:20:5-74
 	android:name
@@ -157,8 +157,8 @@ ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:
 application
 ADDED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:27:5-73:19
 INJECTED from C:\Users\Bannelita\Aliadas\frontend\app\src\main\AndroidManifest.xml:27:5-73:19
-MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bannelita\.gradle\caches\transforms-3\84114cdc67145947aeae5617e585aba8\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bannelita\.gradle\caches\transforms-3\84114cdc67145947aeae5617e585aba8\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.10.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4a62cb928978837df06312d17288046f\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.10.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4a62cb928978837df06312d17288046f\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bannelita\.gradle\caches\transforms-3\3a9c143dc806935c0544adcf7cccee2c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bannelita\.gradle\caches\transforms-3\3a9c143dc806935c0544adcf7cccee2c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-location:21.1.0] C:\Users\Bannelita\.gradle\caches\transforms-3\323d3c37f16da6afa8bab48dde940b8e\transformed\play-services-location-21.1.0\AndroidManifest.xml:7:5-20
@@ -287,8 +287,8 @@ MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\Bannelita\.gr
 MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\Bannelita\.gradle\caches\transforms-3\b4de3028fbc8f96470b81aa97e51b2e9\transformed\navigation-ui-ktx-2.7.7\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\Bannelita\.gradle\caches\transforms-3\faa6bfba4424b2d8e3ad0e71a8462107\transformed\navigation-ui-2.7.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\Bannelita\.gradle\caches\transforms-3\faa6bfba4424b2d8e3ad0e71a8462107\transformed\navigation-ui-2.7.7\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bannelita\.gradle\caches\transforms-3\84114cdc67145947aeae5617e585aba8\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bannelita\.gradle\caches\transforms-3\84114cdc67145947aeae5617e585aba8\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.10.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4a62cb928978837df06312d17288046f\transformed\material-1.10.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.10.0] C:\Users\Bannelita\.gradle\caches\transforms-3\4a62cb928978837df06312d17288046f\transformed\material-1.10.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bannelita\.gradle\caches\transforms-3\3a9c143dc806935c0544adcf7cccee2c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bannelita\.gradle\caches\transforms-3\3a9c143dc806935c0544adcf7cccee2c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Bannelita\.gradle\caches\transforms-3\82b31cb9f6aab621092c2b9d69fc8c15\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
