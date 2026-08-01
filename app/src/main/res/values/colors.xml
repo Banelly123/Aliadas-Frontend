@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand colors -->
-    <color name="purple_primary">#6B35C7</color>
-    <color name="purple_accent">#7F00FF</color>
-    <color name="purple_dark">#4A249A</color>
-    <color name="purple_light">#EDE7F6</color>
-    <color name="purple_surface">#F3EEFF</color>
+    <!-- Identidad: proteccion serena -->
+    <color name="purple_primary">#6E3F68</color>
+    <color name="purple_accent">#815778</color>
+    <color name="purple_dark">#3D293B</color>
+    <color name="purple_light">#F2E4ED</color>
+    <color name="purple_surface">#FAF3F7</color>
+    <color name="purple_on_surface">#5A3555</color>
 
     <!-- Accent -->
-    <color name="red_panic">#E53935</color>
-    <color name="red_error">#B00020</color>
-    <color name="orange_accent">#F57C00</color>
-    <color name="green_success">#43A047</color>
+    <color name="red_panic">#D9364F</color>
+    <color name="red_panic_dark">#A91F38</color>
+    <color name="red_error">#B3263E</color>
+    <color name="orange_accent">#A85D18</color>
+    <color name="orange_surface">#FFF2E5</color>
+    <color name="green_success">#31866F</color>
 
     <!-- Neutral -->
-    <color name="background">#F8F6FB</color>
+    <color name="background">#FFF9FC</color>
     <color name="white">#FFFFFF</color>
-    <color name="text_primary">#1A1A2E</color>
-    <color name="text_secondary">#757575</color>
-    <color name="divider">#E0E0E0</color>
+    <color name="text_primary">#292329</color>
+    <color name="text_secondary">#716771</color>
+    <color name="text_on_primary_soft">#FCEFF7</color>
+    <color name="surface_variant">#F7F1F5</color>
+    <color name="divider">#EADFE6</color>
+    <color name="outline">#D8CBD3</color>
 
     <!-- Nav -->
-    <color name="nav_icon_selected">#6B35C7</color>
-    <color name="nav_icon_unselected">#9E9E9E</color>
+    <color name="nav_icon_selected">#6E3F68</color>
+    <color name="nav_icon_unselected">#807680</color>
 </resources>

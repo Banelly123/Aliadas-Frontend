@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/activity_login.xml",
+        "source": "com.aliadas.app-main-57:/layout/activity_login.xml"
+    },
+    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\dialog_avatar_picker.xml",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\dialog_avatar_picker.xml"
     },
@@ -32,20 +36,8 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_comment.xml"
     },
     {
-        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/fragment_resources.xml",
-        "source": "com.aliadas.app-main-57:/layout/fragment_resources.xml"
-    },
-    {
-        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/fragment_community.xml",
-        "source": "com.aliadas.app-main-57:/layout/fragment_community.xml"
-    },
-    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/fragment_home.xml",
-        "source": "com.aliadas.app-main-57:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\fragment_community.xml",
@@ -56,19 +48,15 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\dialog_add_contact.xml"
     },
     {
-        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\item_contact.xml",
-        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_contact.xml"
-    },
-    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\activity_login.xml",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\item_contact.xml",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\item_contact.xml"
     },
     {
-        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/fragment_contacts.xml",
-        "source": "com.aliadas.app-main-57:/layout/fragment_contacts.xml"
+        "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\fragment_profile.xml"
     }
 ]

@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="6dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="3dp"
-    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/white"
     android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
@@ -23,13 +23,13 @@
             android:layout_height="48dp"
             app:cardCornerRadius="24dp"
             app:cardElevation="0dp"
-            app:cardBackgroundColor="#337F00FF">
+            app:cardBackgroundColor="@color/purple_light">
             <TextView
                 android:id="@+id/txtInitials"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="EG"
-                android:textColor="#6100C5"
+                android:textColor="@color/purple_primary"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:gravity="center" />
@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Elena García"
-                    android:textColor="#191C1D"
+                    android:textColor="@color/text_primary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -66,7 +66,7 @@
                     android:paddingHorizontal="8dp"
                     android:paddingVertical="2dp"
                     android:text="MAMÁ"
-                    android:textColor="#444655"
+                    android:textColor="@color/text_secondary"
                     android:textSize="10sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="+34 612 345 678"
-                android:textColor="#4B4356"
+                android:textColor="@color/text_secondary"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -87,7 +87,7 @@
             android:layout_height="40dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_close"
-            app:tint="#4B4356"
+            app:tint="@color/text_secondary"
             android:contentDescription="Editar contacto" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

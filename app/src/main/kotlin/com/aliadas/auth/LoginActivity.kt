@@ -1,8 +1,12 @@
 package com.aliadas.auth
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.text.InputType
+import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.style.StyleSpan
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -36,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupClickListeners()
+        updateModeUI()
     }
 
     private fun setupClickListeners() {
@@ -53,12 +58,6 @@ class LoginActivity : AppCompatActivity() {
         binding.btnToggleLoginPassword.setOnClickListener {
             togglePasswordVisibility()
         }
-
-        // Enlace para recuperar credenciales (Marcador de posición para desarrollo futuro)
-        binding.txtForgotPassword.setOnClickListener {
-            Toast.makeText(this, "Función de recuperación en desarrollo... 💜", Toast.LENGTH_SHORT).show()
-        }
-
     }
 
     /**
@@ -66,19 +65,33 @@ class LoginActivity : AppCompatActivity() {
      */
     private fun toggleMode() {
         isLoginMode = !isLoginMode
+        updateModeUI()
+    }
+
+    private fun updateModeUI() {
         if (isLoginMode) {
-            binding.tilFullName.visibility = View.GONE  // Ocultamos el campo del Nombre Completo
+            binding.tilFullName.visibility = View.GONE
             binding.btnSubmitLogin.text = "Iniciar Sesión"
-            binding.txtRegisterRedirect.text = "¿No tienes una cuenta? Regístrate aquí"
+            setRedirectText("¿No tienes una cuenta? ", "Regístrate aquí")
             binding.txtHeaderTitle.text = "Ingresar a la red"
-            binding.txtForgotPassword.visibility = View.VISIBLE
         } else {
-            binding.tilFullName.visibility = View.VISIBLE // Mostramos el campo del Nombre Completo
+            binding.tilFullName.visibility = View.VISIBLE
             binding.btnSubmitLogin.text = "Registrarse"
-            binding.txtRegisterRedirect.text = "¿Ya tienes una cuenta? Inicia Sesión aquí"
+            setRedirectText("¿Ya tienes una cuenta? ", "Inicia Sesión aquí")
             binding.txtHeaderTitle.text = "Crea tu cuenta"
-            binding.txtForgotPassword.visibility = View.GONE
         }
+    }
+
+    private fun setRedirectText(normalText: String, boldText: String) {
+        val fullText = "$normalText$boldText"
+        val spannable = SpannableStringBuilder(fullText)
+        spannable.setSpan(
+            StyleSpan(Typeface.BOLD),
+            normalText.length,
+            fullText.length,
+            Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+        binding.txtRegisterRedirect.text = spannable
     }
 
     private fun doLogin() {

@@ -129,7 +129,7 @@ class AlertService : Service() {
     }
 
     private fun buildSmsMessage(context: Context, lat: Double?, lng: Double?): String {
-        val loc = if (lat != null && lng != null) "📍 Ubicación: https://maps.google.com/?q=$lat,$lng" else "📍 Ubicación no disponible"
+        val loc = if (lat != null && lng != null) "Ubicación: https://maps.google.com/?q=$lat,$lng" else "Ubicación no disponible"
         val battery = (context.getSystemService(Context.BATTERY_SERVICE) as BatteryManager).getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)
         val networkInfo = getNetworkInfo(context)
 
@@ -138,7 +138,7 @@ class AlertService : Service() {
         val horaFormateada = if (ultimaVez == 0L) "No disponible" else
             java.text.SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).format(java.util.Date(ultimaVez))
 
-        return "🚨 ALERTA - Aliadas\n$loc\n🔋 Batería: $battery%\n📶 Red: $networkInfo\n🔓 Último desbloqueo: $horaFormateada"
+        return "ALERTA | ALIADAS\n\nProtocolo de emergencia activo.\n\n${loc.replace("Ubicación: ", "Ubicación:\n")}\n\nBatería: $battery%\nConexión: $networkInfo\nÚltimo desbloqueo: $horaFormateada"
     }
 
     private fun getNetworkInfo(context: Context): String {

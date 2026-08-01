@@ -4,7 +4,6 @@ package com.aliadas.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,9 +26,6 @@ public final class ItemPostBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout btnLike;
-
-  @NonNull
-  public final ImageButton btnPostMenu;
 
   @NonNull
   public final CardView cardImageContainer;
@@ -56,15 +52,14 @@ public final class ItemPostBinding implements ViewBinding {
   public final TextView txtPostTime;
 
   private ItemPostBinding(@NonNull CardView rootView, @NonNull LinearLayout btnComment,
-      @NonNull LinearLayout btnLike, @NonNull ImageButton btnPostMenu,
-      @NonNull CardView cardImageContainer, @NonNull ImageView imgLikeIcon,
-      @NonNull ImageView imgPostAttachment, @NonNull TextView txtCommentCount,
-      @NonNull TextView txtLikeCount, @NonNull TextView txtPostCategory,
-      @NonNull TextView txtPostContent, @NonNull TextView txtPostTime) {
+      @NonNull LinearLayout btnLike, @NonNull CardView cardImageContainer,
+      @NonNull ImageView imgLikeIcon, @NonNull ImageView imgPostAttachment,
+      @NonNull TextView txtCommentCount, @NonNull TextView txtLikeCount,
+      @NonNull TextView txtPostCategory, @NonNull TextView txtPostContent,
+      @NonNull TextView txtPostTime) {
     this.rootView = rootView;
     this.btnComment = btnComment;
     this.btnLike = btnLike;
-    this.btnPostMenu = btnPostMenu;
     this.cardImageContainer = cardImageContainer;
     this.imgLikeIcon = imgLikeIcon;
     this.imgPostAttachment = imgPostAttachment;
@@ -111,12 +106,6 @@ public final class ItemPostBinding implements ViewBinding {
       id = R.id.btnLike;
       LinearLayout btnLike = ViewBindings.findChildViewById(rootView, id);
       if (btnLike == null) {
-        break missingId;
-      }
-
-      id = R.id.btnPostMenu;
-      ImageButton btnPostMenu = ViewBindings.findChildViewById(rootView, id);
-      if (btnPostMenu == null) {
         break missingId;
       }
 
@@ -168,9 +157,9 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemPostBinding((CardView) rootView, btnComment, btnLike, btnPostMenu,
-          cardImageContainer, imgLikeIcon, imgPostAttachment, txtCommentCount, txtLikeCount,
-          txtPostCategory, txtPostContent, txtPostTime);
+      return new ItemPostBinding((CardView) rootView, btnComment, btnLike, cardImageContainer,
+          imgLikeIcon, imgPostAttachment, txtCommentCount, txtLikeCount, txtPostCategory,
+          txtPostContent, txtPostTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,4 +1,4 @@
-#Mon Jun 29 22:58:40 CST 2026
+#Sat Aug 01 01:34:31 CST 2026
 base.0=C\:\\Users\\Bannelita\\Aliadas\\frontend\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
 base.1=C\:\\Users\\Bannelita\\Aliadas\\frontend\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
 base.2=C\:\\Users\\Bannelita\\Aliadas\\frontend\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\2\\classes.dex

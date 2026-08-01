@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
         binding.btnPanic.setOnClickListener {
             if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 com.aliadas.contacts.AlertService.start(requireContext())
-                Toast.makeText(requireContext(), "🚨 ¡Protocolo de emergencia activado!", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), "¡Protocolo de emergencia activado!", Toast.LENGTH_LONG).show()
             } else {
                 Toast.makeText(requireContext(), "Primero concede permisos de ubicación", Toast.LENGTH_SHORT).show()
                 checkLocationPermissions()

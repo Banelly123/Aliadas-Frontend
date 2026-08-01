@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:text="Color de fondo"
         android:textSize="14sp"
-        android:textColor="#4B4356"
+        android:textColor="@color/text_secondary"
         android:layout_marginBottom="8dp" />
 
     <HorizontalScrollView
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="Animal"
         android:textSize="14sp"
-        android:textColor="#4B4356"
+        android:textColor="@color/text_secondary"
         android:layout_marginBottom="8dp" />
 
     <androidx.recyclerview.widget.RecyclerView

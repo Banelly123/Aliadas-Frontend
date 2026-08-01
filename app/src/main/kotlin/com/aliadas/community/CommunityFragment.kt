@@ -132,7 +132,7 @@ class CommunityFragment : Fragment() {
                 val res = RetrofitClient.api.createPost(token, PostRequest(content, category))
                 if (res.isSuccessful && _binding != null) {
                     binding.etPost.setText("")
-                    Toast.makeText(requireContext(), "◈ Publicado anónimamente", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Publicado anónimamente", Toast.LENGTH_SHORT).show()
                     loadPosts()
                 }
             } catch (_: Exception) {

@@ -24,9 +24,6 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final MaterialButton btnGoogleLogin;
-
-  @NonNull
   public final MaterialButton btnSubmitLogin;
 
   @NonNull
@@ -48,9 +45,6 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ConstraintLayout topBar;
 
   @NonNull
-  public final TextView txtForgotPassword;
-
-  @NonNull
   public final TextView txtHeaderSubtitle;
 
   @NonNull
@@ -63,15 +57,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView txtToolbarAppName;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnGoogleLogin, @NonNull MaterialButton btnSubmitLogin,
-      @NonNull ImageButton btnToggleLoginPassword, @NonNull EditText edtFullName,
-      @NonNull EditText edtLoginEmail, @NonNull EditText edtLoginPassword,
-      @NonNull LinearLayout tilFullName, @NonNull ConstraintLayout topBar,
-      @NonNull TextView txtForgotPassword, @NonNull TextView txtHeaderSubtitle,
+      @NonNull MaterialButton btnSubmitLogin, @NonNull ImageButton btnToggleLoginPassword,
+      @NonNull EditText edtFullName, @NonNull EditText edtLoginEmail,
+      @NonNull EditText edtLoginPassword, @NonNull LinearLayout tilFullName,
+      @NonNull ConstraintLayout topBar, @NonNull TextView txtHeaderSubtitle,
       @NonNull TextView txtHeaderTitle, @NonNull TextView txtRegisterRedirect,
       @NonNull TextView txtToolbarAppName) {
     this.rootView = rootView;
-    this.btnGoogleLogin = btnGoogleLogin;
     this.btnSubmitLogin = btnSubmitLogin;
     this.btnToggleLoginPassword = btnToggleLoginPassword;
     this.edtFullName = edtFullName;
@@ -79,7 +71,6 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.edtLoginPassword = edtLoginPassword;
     this.tilFullName = tilFullName;
     this.topBar = topBar;
-    this.txtForgotPassword = txtForgotPassword;
     this.txtHeaderSubtitle = txtHeaderSubtitle;
     this.txtHeaderTitle = txtHeaderTitle;
     this.txtRegisterRedirect = txtRegisterRedirect;
@@ -113,12 +104,6 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnGoogleLogin;
-      MaterialButton btnGoogleLogin = ViewBindings.findChildViewById(rootView, id);
-      if (btnGoogleLogin == null) {
-        break missingId;
-      }
-
       id = R.id.btnSubmitLogin;
       MaterialButton btnSubmitLogin = ViewBindings.findChildViewById(rootView, id);
       if (btnSubmitLogin == null) {
@@ -161,12 +146,6 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtForgotPassword;
-      TextView txtForgotPassword = ViewBindings.findChildViewById(rootView, id);
-      if (txtForgotPassword == null) {
-        break missingId;
-      }
-
       id = R.id.txtHeaderSubtitle;
       TextView txtHeaderSubtitle = ViewBindings.findChildViewById(rootView, id);
       if (txtHeaderSubtitle == null) {
@@ -191,10 +170,9 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, btnGoogleLogin, btnSubmitLogin,
+      return new ActivityLoginBinding((ConstraintLayout) rootView, btnSubmitLogin,
           btnToggleLoginPassword, edtFullName, edtLoginEmail, edtLoginPassword, tilFullName, topBar,
-          txtForgotPassword, txtHeaderSubtitle, txtHeaderTitle, txtRegisterRedirect,
-          txtToolbarAppName);
+          txtHeaderSubtitle, txtHeaderTitle, txtRegisterRedirect, txtToolbarAppName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
