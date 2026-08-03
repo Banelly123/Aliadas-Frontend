@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,12 +30,17 @@ public final class DialogAvatarPickerBinding implements ViewBinding {
   @NonNull
   public final RecyclerView rvAnimals;
 
+  @NonNull
+  public final TextView tvAnimalLabel;
+
   private DialogAvatarPickerBinding(@NonNull LinearLayout rootView, @NonNull ImageView ivPreview,
-      @NonNull LinearLayout layoutColors, @NonNull RecyclerView rvAnimals) {
+      @NonNull LinearLayout layoutColors, @NonNull RecyclerView rvAnimals,
+      @NonNull TextView tvAnimalLabel) {
     this.rootView = rootView;
     this.ivPreview = ivPreview;
     this.layoutColors = layoutColors;
     this.rvAnimals = rvAnimals;
+    this.tvAnimalLabel = tvAnimalLabel;
   }
 
   @Override
@@ -82,8 +88,14 @@ public final class DialogAvatarPickerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvAnimalLabel;
+      TextView tvAnimalLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvAnimalLabel == null) {
+        break missingId;
+      }
+
       return new DialogAvatarPickerBinding((LinearLayout) rootView, ivPreview, layoutColors,
-          rvAnimals);
+          rvAnimals, tvAnimalLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

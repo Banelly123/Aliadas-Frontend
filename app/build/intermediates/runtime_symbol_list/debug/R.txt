@@ -3793,6 +3793,7 @@ int id transition_position 0x7f080226
 int id transition_scene_layoutid_cache 0x7f080227
 int id transition_transform 0x7f080228
 int id triangle 0x7f080229
+int id tvAnimalLabel 0x7f080257
 int id tvEmpty 0x7f08022a
 int id tvName 0x7f08022b
 int id tvPhone 0x7f08022c

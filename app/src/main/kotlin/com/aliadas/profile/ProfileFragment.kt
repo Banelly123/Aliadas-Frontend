@@ -130,6 +130,7 @@ class ProfileFragment : Fragment() {
         val rvAnimals = dialogView.findViewById<RecyclerView>(R.id.rvAnimals)
 
         dialogView.findViewById<View>(R.id.layoutColors)?.parent?.let { (it as View).visibility = View.GONE }
+        dialogView.findViewById<View>(R.id.tvAnimalLabel)?.visibility = View.GONE
 
         var selectedType = currentAvatar
 
