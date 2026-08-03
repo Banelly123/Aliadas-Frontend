@@ -20,7 +20,7 @@ class CallReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         val state = intent.getStringExtra(TelephonyManager.EXTRA_STATE)
         var number = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER)
-        
+
         // Si el número viene nulo, intentamos sacarlo de otros extras comunes
         if (number == null) {
             number = intent.extras?.getString("incoming_number")
@@ -35,7 +35,7 @@ class CallReceiver : BroadcastReceiver() {
                 if (number != null && isTrusted(context, number)) {
                     isRinging = true
                     incomingNumber = number
-                    
+
                     alertRunnable = Runnable {
                         if (isRinging) {
                             AlertService.start(context, incomingNumber)
@@ -49,14 +49,10 @@ class CallReceiver : BroadcastReceiver() {
             }
 
             TelephonyManager.EXTRA_STATE_OFFHOOK -> {
-                // Se contestó una llamada entrante O se inició una saliente
+                // Si la llamada entrante fue contestada antes de los 10 segundos,
+                // se cancela el temporizador. No detenemos aquí un protocolo ya
+                // activo porque OFFHOOK no informa de forma fiable a quién se llamó.
                 cancelTimer()
-                
-                // Si es una llamada saliente (OFFHOOK sin número entrante previo), 
-                // el sistema a veces no da el número aquí por privacidad.
-                // Pero si el protocolo de alerta está activo y la usuaria descuelga para llamar, 
-                // asumimos que está retomando el control.
-                AlertService.stop(context)
                 pendingResult.finish()
             }
 
@@ -66,11 +62,13 @@ class CallReceiver : BroadcastReceiver() {
                 // No llamamos a cancelTimer aquí para dejar que el runnable de 10s decida si fue perdida larga
                 handler.postDelayed({ try { pendingResult.finish() } catch(e: Exception) {} }, 2000)
             }
-            
+
             else -> {
                 if (intent.action == Intent.ACTION_NEW_OUTGOING_CALL) {
                     val outgoingNumber = intent.getStringExtra(Intent.EXTRA_PHONE_NUMBER)
-                    if (outgoingNumber != null && isTrusted(context, outgoingNumber)) {
+                    if (outgoingNumber != null &&
+                        AlertService.isCallProtocolFor(context, outgoingNumber)
+                    ) {
                         AlertService.stop(context)
                     }
                 }
