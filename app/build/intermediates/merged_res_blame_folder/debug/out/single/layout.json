@@ -1,11 +1,11 @@
 [
     {
-        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/activity_login.xml",
-        "source": "com.aliadas.app-main-57:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\dialog_avatar_picker.xml",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\layout\\dialog_avatar_picker.xml"
+    },
+    {
+        "merged": "com.aliadas.app-mergeDebugResources-54:/layout/dialog_avatar_picker.xml",
+        "source": "com.aliadas.app-main-57:/layout/dialog_avatar_picker.xml"
     },
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-mergeDebugResources-54:\\layout\\bottom_sheet_comments.xml",

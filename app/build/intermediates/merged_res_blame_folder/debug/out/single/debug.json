@@ -96,10 +96,6 @@
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_share_location.xml"
     },
     {
-        "merged": "com.aliadas.app-merged_res-55:/layout_activity_login.xml.flat",
-        "source": "com.aliadas.app-main-57:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -154,6 +150,10 @@
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\drawable_ic_female.xml.flat",
         "source": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-main-57:\\drawable\\ic_female.xml"
+    },
+    {
+        "merged": "com.aliadas.app-merged_res-55:/layout_dialog_avatar_picker.xml.flat",
+        "source": "com.aliadas.app-main-57:/layout/dialog_avatar_picker.xml"
     },
     {
         "merged": "C:\\Users\\Bannelita\\.gradle\\daemon\\8.5\\com.aliadas.app-merged_res-55:\\layout_fragment_resources.xml.flat",

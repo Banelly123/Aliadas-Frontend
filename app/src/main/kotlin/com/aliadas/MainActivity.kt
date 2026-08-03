@@ -25,6 +25,7 @@ import com.aliadas.utils.SessionManager
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private var usageAccessDialogShown = false
 
     private val requestPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -135,14 +136,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun requestUsageAccessIfNeeded() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P ||
-            LastUnlockManager.hasUsageAccess(this)
+            LastUnlockManager.hasUsageAccess(this) ||
+            usageAccessDialogShown
         ) {
             return
         }
 
-        val prefs = getSharedPreferences("ConfiguracionApp", Context.MODE_PRIVATE)
-        if (prefs.getBoolean("usage_access_prompted", false)) return
-        prefs.edit().putBoolean("usage_access_prompted", true).apply()
+        // Se muestra una sola vez durante esta apertura de la app. No se guarda
+        // un indicador permanente porque la usuaria puede elegir "Más tarde"
+        // o salir de Ajustes sin activar el acceso.
+        usageAccessDialogShown = true
 
         AlertDialog.Builder(this)
             .setTitle("Permitir acceso al uso")
@@ -152,17 +155,30 @@ class MainActivity : AppCompatActivity() {
                         "busca Aliadas y activa el permiso."
             )
             .setPositiveButton("Configurar") { _, _ ->
-                try {
-                    startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
-                } catch (e: Exception) {
-                    Toast.makeText(
-                        this,
-                        "No fue posible abrir la configuración de acceso al uso",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
+                openUsageAccessSettings()
             }
             .setNegativeButton("Más tarde", null)
             .show()
+    }
+
+    private fun openUsageAccessSettings() {
+        try {
+            // En dispositivos compatibles abre directamente la ficha de Aliadas.
+            val appSettingsIntent = Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS).apply {
+                data = Uri.parse("package:$packageName")
+            }
+            startActivity(appSettingsIntent)
+        } catch (e: Exception) {
+            try {
+                // Respaldo para fabricantes que sólo permiten abrir la lista general.
+                startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+            } catch (fallbackException: Exception) {
+                Toast.makeText(
+                    this,
+                    "No fue posible abrir la configuración de acceso al uso",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
     }
 }

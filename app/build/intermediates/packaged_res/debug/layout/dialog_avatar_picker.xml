@@ -14,13 +14,6 @@
         android:layout_marginBottom="24dp"
         android:scaleType="fitCenter" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Color de fondo"
-        android:textSize="14sp"
-        android:textColor="@color/text_secondary"
-        android:layout_marginBottom="8dp" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -35,9 +28,10 @@
     </HorizontalScrollView>
 
     <TextView
+        android:id="@+id/tvAnimalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Animal"
+        android:text="Iconos Disponibles"
         android:textSize="14sp"
         android:textColor="@color/text_secondary"
         android:layout_marginBottom="8dp" />
